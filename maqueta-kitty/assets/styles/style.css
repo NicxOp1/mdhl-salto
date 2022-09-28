@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  height: 100px;
+}
+header {
+  height: 15vh;
+  background-color: rgb(209, 175, 175);
+  background-image: url(../img/cinta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.div_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.img-header{
+  height: 80px;
+  object-fit: contain;
+  
+}
+#active{
+    background-color: rgb(216, 133, 94);;
+}
+nav {
+  min-height: 5vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.a-header{
+    text-decoration: none;
+    color: rgba(5, 5, 5, 0.904);
+    background-color: rgb(209, 175, 175);
+    padding: 10px;
+    margin: 6px;
+    border-radius: 2rem;
+}
+
+
+
+
+main {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-style: solid
+}
+.div-main{
+    background-color: rgb(231, 207, 207);
+    border-radius: 2rem;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: .8rem;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+h2{
+    font-size: 45px;
+    padding: 10px;
+}
+article{
+    height: 24rem;
+    margin: 2rem;
+    width: 10rem;
+    background-color:rgb(110, 76, 76); 
+    border-radius: 2rem;
+    border: 2px solid rgb(22, 156, 100);
+}
+.img-main{
+    height: 40%;
+    width: 100%;
+    border-radius: 2rem 2rem 0 0 ;
+}
+.div-article{
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 0 0 2rem 2rem;
+}
+bottom{
+    background-color: rgb(160, 75, 149);
+    padding: 12px;
+    border-radius: 2rem;
+    width: 78%;
+    text-align: center;
+    margin-left: 16px;
+    border: 2px solid black;
+}
+
+
+
+
+
+footer {
+  height: 10vh;
+  background-color:mediumorchid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.a-footer{
+    color: black;
+}
+
+
+
+@media only screen and (max-width:1024px){
+    article{
+        width: 18rem;
+    }
+    .img-main{
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width:768px){
+    footer{
+        flex-wrap: wrap;  
+        gap:1rem;
+        padding: 1rem; 
+        min-height: 15vh;
+    }
+    .div_header{
+    flex-direction: column;
+    gap: 0;
+    
+    }
+}
+@media only screen and (max-width:768px){
+    .img-header, h1{
+     transform: scale(.7);
+     
+    }
+}
